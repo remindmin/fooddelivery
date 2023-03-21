@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: cooking
+  labels:
+    app: cooking
+spec:
+  ports:
+    - port: 8080
+      targetPort: 8080
+  selector:
+    app: cooking
